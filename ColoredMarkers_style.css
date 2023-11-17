@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+    background-color: rgb(0,255,255);
+}
+.marker{
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+/* A color wheel is a circle where similar colors,
+or hues,
+are near each other,
+and different ones are further apart. For example,
+pure red is between the hues rose and orange. Two colors that are opposite from each other on the color wheel are called complementary colors. If two complementary colors are combined,
+they produce gray. But when they are placed side-by-side,
+these colors produce strong visual contrast and appear brighter. */
+.red{
+    background: linear-gradient(rgb(122,74,14),rgb(245,62,113),rgb(162,27,27));
+    box-shadow: 0px 0px 20px 0px rgba(83, 14, 14, 0.8);
+}
+/* red : red   = 255
+         green = 0
+         blue  = 0 
+         
+    pure red + pure green = yellow = rgb(255,255,0)
+    pure red + half green = orange = rgb(255,127,0)
+    half red + pure green = chartreuse green = rgb(127,255,0)*/
+
+.green{
+    background: linear-gradient(#55680D, #71f571, #116c31);
+    box-shadow: 0px 0px 20px 0px #3B7E20CC;
+}
+/* green : red   = 0
+         green = 255
+         blue  = 0 
+        
+    pure green + pure blue = cyan = rgb(0,255,255) 
+    pure green + half blue = spring green = rgb(0,255,127)
+    half green + pure blue = azure = rgb(0,127,255)*/
+
+.blue{
+    background: linear-gradient(hsl(186,76%,16%), hsl(223,90%,60%), hsl(240,56%,42%));
+    box-shadow: 0px 0px 20px 0px hsla(223, 59%, 31%, 0.8);
+}
+/* In a color wheel red is at 0
+                    green is at 120
+                    blue is at 240 */
+/* blue : red   = 0
+         green = 0
+         blue  = 255 
+         
+    pure red + pure blue = magenta = rgb(255,0,255)
+    half red + pure blue = violet = rgb(127,255,0)
+    pure red + half blue = bright pink = rgb(255,0,127)*/
+
+.container{
+    padding: 10px 0px;
+    background-color: rgb(255,255,255);
+}
+/* black : red = 0
+           green = 0
+           blue = 0
+
+   white : red = 255
+           green = 255
+           blue = 255 */
+
+.sleeve{
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255 ,255, 50%);
+    border-left: 10px double rgba(0, 0, 0, 75%);
+}
+.cap{
+    width: 60px;
+    height: 25px;
+}
+.sleeve,.cap{
+    display: inline-block;
+}
+/* The box-shadow property lets you apply one or more shadows around an element. Here is basic syntax: box-shadow: offsetX offsetY color;
+Here's how the offsetX and offsetY values work:
+
+both offsetX and offsetY accept number values in px and other CSS units a positive offsetX value moves the shadow right and a negative value moves it left a positive offsetY value moves the shadow down and a negative value moves it up if you want a value of zero (0) for any or both offsetX and offsetY,
+you don't need to add a unit. Every browser understands that zero means no change.
+ The height and width of the shadow is determined by the height and width of the element it's applied to. You can also use an optional spreadRadius value to spread out the reach of the shadow. More on that later. */
+
